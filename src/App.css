@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #0f171e;
+  background-color: hsl(208, 33%, 9%);
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6,p {
   justify-content: space-between;
   align-items: center;
   /* height: 3.5rem; */
-  background-color: #1a242e;
+  background-color: hsl(210, 28%, 14%);
   padding: 1rem 2rem;
 }
 
@@ -64,10 +64,10 @@ h1,h2,h3,h4,h5,h6,p {
 
 .search-bar {
   font-size: 1rem;
-  border: 0.1em solid grey;
+  border: 0.05em solid grey;
   border-style: solid solid solid none;
   background: transparent;
-  padding: 0.3em 0;
+  padding: 0.35em 0;
   color: white;
   outline: none;
 }
@@ -82,10 +82,10 @@ h1,h2,h3,h4,h5,h6,p {
 .navbar-right .btn {
   /* padding: 0 !important; */
   font-size: 1rem;
-  padding: 0.1em 0.5em 0em 0.5em;
+  padding: 0.2em 0.5em 0em 0.5em;
   background-color: transparent;
   outline: none;
-  border: 0.1em solid grey;
+  border: 0.05em solid grey;
   border-style: solid none solid solid;
   color: grey;
   cursor: pointer;
@@ -111,4 +111,27 @@ h1,h2,h3,h4,h5,h6,p {
 
 .user-name:hover{
   color: white !important;
+}
+
+/* Movie sliders */
+
+.movie-list {
+  display: flex;
+  margin-left: 1rem;
+
+}
+
+.movie {
+  margin-right: 0.5rem;
+}
+
+.movie img {
+  height: 15rem;
+  object-fit: cover;
+  transition: 0.3s;
+
+}
+
+.slider-heading {
+  margin: 1rem 0 0.5rem 1rem;
 }
