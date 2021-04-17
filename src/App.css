@@ -26,10 +26,7 @@ h1,h2,h3,h4,h5,h6,p {
   align-items: center;
 }
 
-.navbar-right {
-  display: flex;
-  align-items: center;
-}
+
 
 .nav-link {
   color: white;
@@ -48,6 +45,21 @@ h1,h2,h3,h4,h5,h6,p {
   text-decoration: none;
   color: white;
   margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar right */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+ 
 }
 
 .search-bar {
@@ -83,4 +95,20 @@ h1,h2,h3,h4,h5,h6,p {
 .btn:hover {
   color:white;
 
+}
+
+.user-name {
+  margin-left: 1rem !important;
+  margin-right: 0 !important;
+  display: flex;
+  align-items: center;
+  color: grey !important;
+}
+
+.user-name .material-icons {
+  margin-right: 0.5rem;
+}
+
+.user-name:hover{
+  color: white !important;
 }
