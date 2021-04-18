@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react"
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore from "swiper";
+import 'swiper/swiper-bundle.css';
+
+
 import axios from "axios"
 import MovieList from "../components/MovieList"
 
@@ -33,7 +38,11 @@ const Homepage = () => {
         <div>
             <h2 className="slider-heading">Popular movies</h2>
             <MovieList movies={moviesPopular} />
+
+
         </div>
+
+
     )
 }
 

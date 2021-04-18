@@ -1,11 +1,11 @@
 import './App.css';
 
-import './App.css';
+
 import React from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 import Homepage from "./pages/Homepage"
-// import Details from "./pages/Details";
+import Details from "./pages/Details";
 
 import Navbar from "./components/Navbar"
 
@@ -19,7 +19,7 @@ function App() {
 
         <Switch>
           <Route path="/" exact component={Homepage} />
-          {/* <Route path="/movie/:id" exact component={Details} /> */}
+          <Route path="/movies/:id" exact component={Details} />
         </Switch>
       </Router>
     </>

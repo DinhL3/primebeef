@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* @import url("https://unpkg.com/swiper/css/swiper.css");
+@import url("https://unpkg.com/swiper/css/swiper.min.css"); */
+
 
 body {
   margin: 0;
   padding: 0;
   background-color: hsl(208, 33%, 9%);
+  user-select: none;
+  font-size: 18px;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -116,14 +121,27 @@ h1,h2,h3,h4,h5,h6,p {
 /* Movie sliders */
 
 .movie-list {
-  display: flex;
-  margin-left: 1rem;
+  /* display: flex; */
+  margin-left: 3rem;
 
 }
 
 .movie {
-  margin-right: 0.5rem;
+  /* margin-right: 0.5rem; */
+  transition: 0.2s;
+  cursor: pointer;
 }
+
+
+.movie:hover {
+  transform: scale(1.1);
+ 
+}
+
+.swiper-container {
+  overflow: visible !important;
+}
+
 
 .movie img {
   height: 15rem;
@@ -133,5 +151,114 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .slider-heading {
-  margin: 1rem 0 0.5rem 1rem;
+  margin: 1rem 0 0.5rem 3rem;
 }
+
+.swiper-button-next {
+  color: white !important;
+}
+
+.swiper-button-prev {
+  color: white !important;
+}
+
+/* Movie details page */
+
+.movie-details {
+  max-width: 90rem;
+  margin: auto;
+  position: relative;
+}
+
+.movie-left{
+  max-width: 45rem;
+  padding-top: 2rem;
+}
+
+.movie-right {
+  /* border: 1px solid blue; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+  max-width: 60rem;
+}
+
+.movie-right img {
+  width: 100%;
+ }
+
+.overlay1 {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to right, #0f171f, rgba(15, 23, 31, 0.4), transparent);
+  
+}
+.overlay2 {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to top, #0f171f, rgba(15, 23, 31, 0.1), transparent);
+  
+}
+
+ dl {
+   display: flex;
+   margin: 0;
+ }
+
+ dt {
+   color: #8197a4;
+   font-weight: bold;
+   flex-basis: 15%;
+ }
+
+ dd {
+  color: #8197a4;
+  flex-basis: 70%;
+ }
+
+ .movie-details p {
+   margin: 1rem 0;
+ }
+
+ .badges {
+   padding-top: 1rem;
+  color: #8197a4;
+
+ }
+
+ .badges span {
+   margin:0 0.7rem 0 0;
+   font-weight: bold;
+ }
+
+ .movie-left button {
+   color: white !important;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1rem;
+   padding: 0.5em 1.4em 0.5em 1em;
+   background-color: #1399de;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   border-radius: 0.2em;
+   margin-top: 2rem;
+ }
+
+ .movie-left button:hover {
+   background-color: hsl(200, 84%, 57%);
+ }
+ .movie-left .material-icons {
+  font-size: 2rem;
+ }
+
+ .movie-left a {
+   text-decoration: none;
+   color: #1399de;
+ }
