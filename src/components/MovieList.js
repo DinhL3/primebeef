@@ -19,7 +19,7 @@ const MovieList = (props) => {
             <Swiper spaceBetween={0}
                 // slidesPerView={10}
                 navigation
-                freeMode={false}
+                freeMode={true}
                 breakpoints={{
 
                     320: {

@@ -9,6 +9,7 @@ body {
   background-color: hsl(208, 33%, 9%);
   user-select: none;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -122,7 +123,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 .movie-list {
   /* display: flex; */
-  margin-left: 3rem;
+  margin-left: 2rem;
 
 }
 
@@ -173,6 +174,7 @@ h1,h2,h3,h4,h5,h6,p {
 .movie-left{
   max-width: 45rem;
   padding-top: 2rem;
+  padding-left: 1rem;
 }
 
 .movie-right {
