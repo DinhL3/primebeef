@@ -39,9 +39,7 @@ const Homepage = (props) => {
 
     let history = useHistory()
 
-    // const movieSelect = () => {
-    //     history.push(`/movies/${props.id}`);
-    // }
+
 
     return (
         <div>
@@ -52,7 +50,7 @@ const Homepage = (props) => {
                 pagination={{ clickable: true }}
                 autoplay={{
                     delay: 2500,
-
+                    disableOnInteraction: false,
                 }}
                 className="hero-slider">
 

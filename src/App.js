@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 import Homepage from "./pages/Homepage"
 import Details from "./pages/Details";
+import Search from "./pages/Search"
 
 import Navbar from "./components/Navbar"
 
@@ -20,6 +21,8 @@ function App() {
         <Switch>
           <Route path="/" exact component={Homepage} />
           <Route path="/movies/:id" exact component={Details} />
+          <Route path="/search/movie/:query" exact component={Search} />
+
         </Switch>
       </Router>
     </>
