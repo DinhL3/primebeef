@@ -11,7 +11,7 @@ const Movie = (props) => {
 
     return (
         <div className="movie" onClick={() => movieSelect()}>
-            <img src={`https://image.tmdb.org/t/p/original/${props.img}`}></img>
+            <img src={`https://image.tmdb.org/t/p/original/${props.img}`} />
         </div>
     );
 };

@@ -4,9 +4,7 @@ import Movie from './Movie';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-
 import 'swiper/swiper-bundle.css';
-
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const MovieList = (props) => {

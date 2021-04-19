@@ -83,7 +83,7 @@ const Details = () => {
             <div className="movie-right">
                 <div className="overlay1"></div>
                 <div className="overlay2"></div>
-                <img src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}></img>
+                <img src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} />
 
             </div>
         </div>

@@ -8,7 +8,7 @@ body {
   padding: 0;
   background-color: hsl(208, 33%, 9%);
   user-select: none;
-  font-size: 18px;
+  font-size: 16px;
   overflow-x: hidden;
 }
 
@@ -117,6 +117,31 @@ h1,h2,h3,h4,h5,h6,p {
 
 .user-name:hover{
   color: white !important;
+}
+
+/* Hero slider */
+.hero-slider {
+  position: relative;
+}
+
+
+
+.hero-slider .swiper-slide {
+  position: relative !important;
+  overflow: hidden !important;
+  height: 20rem;
+  /* max-height: 34vh; */
+}
+
+.hero-slider img {
+  position:relative;
+  bottom: 5rem;
+  width:100vw;
+  cursor: pointer;
+}
+
+.hero-slider .swiper-pagination-bullet {
+  background-color: white !important;
 }
 
 /* Movie sliders */
