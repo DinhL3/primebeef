@@ -11,7 +11,7 @@ const Navbar = () => {
     const QUERYSTR_PREFIX = "&query="
 
     const handleSearch = () => {
-        history.push(`/search/movie/${QUERYSTR_PREFIX}${keyword}`)
+        history.push(`/search/movie/${QUERYSTR_PREFIX}${keyword}A`)
     }
 
     return (

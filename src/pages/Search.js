@@ -15,6 +15,7 @@ const Search = () => {
         try {
             let url = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}${query}`
 
+            console.log(url)
             const res = await axios.get(url)
             console.log(res.data.results)
             setSearchRes(res.data.results)
