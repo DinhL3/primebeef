@@ -18,9 +18,9 @@ const Navbar = () => {
         <div className="navbar" >
             <div className="navbar-left">
                 <Link className="logo" to="/"><span class="material-icons">slideshow</span> prime beef</Link>
-                <Link className="nav-link" to="">Movies</Link>
-                <Link className="nav-link" to="">TV Shows</Link>
-                <Link className="nav-link" to="">Kids</Link>
+                <Link className="nav-link" to="/">Movies</Link>
+                <Link className="nav-link" to="/na">TV Shows</Link>
+                <Link className="nav-link" to="/na">Kids</Link>
             </div>
             <div className="navbar-right">
                 <form className="search-form" onSubmit={handleSearch}>
@@ -28,7 +28,7 @@ const Navbar = () => {
                     <input className="search-bar" type="text" placeholder="Search" onChange={(e) => setKeyword(e.target.value)}></input>
                 </form>
 
-                <Link className="nav-link user-name" to=""><span class="material-icons">account_circle</span>Dinh</Link>
+                <Link className="nav-link user-name" to="/na"><span class="material-icons">account_circle</span>Dinh</Link>
             </div>
         </div >
     )

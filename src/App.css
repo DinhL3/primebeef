@@ -341,3 +341,15 @@ h1,h2,h3,h4,h5,h6,p {
    padding: 0 1rem;
 }
 
+.na {
+  height: 80vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.na h1,h2 {
+  color:hsl(201, 15%, 40%) !important;
+  margin: 1rem;
+}
